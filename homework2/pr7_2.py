@@ -1,8 +1,8 @@
 user_input = int(input("Введите число:"))
-binary = bin(user_input)
-octt = oct(user_input)
+binar = bin(user_input)[2:]
+octt = oct(user_input)[2:]
 
 
-print("(0b - двоичная, 0o - воьсмиричная)", binary, octt)
+print("Двоичная система счисления: ", binar, " и восьмиричная система счисления: ", octt)
 
 input()
