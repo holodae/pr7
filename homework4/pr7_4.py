@@ -1,10 +1,17 @@
-input("x = a + b * 4 - c ")
-a = int(input("Введите значение а:"))
-b = int(input("Введите знаечение b:"))
-c = int(input("Введите значение с:"))
+summ = 0
 
-x = a+b*4-c
 
-print("Полученное x = ", x)
+while True:
+    input_user = input("Вводите знаечния: ")
 
-input()
+    if input_user.lower() in ['stop', 'exit']:
+        print("Цикл завершен", summ)
+        break
+
+    try:
+        num = float(input_user)
+        summ += num
+        print("Сумма: ", summ)
+
+    except ValueError:
+         print("Введите корректные данные")
