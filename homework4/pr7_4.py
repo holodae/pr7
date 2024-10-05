@@ -5,6 +5,6 @@ c = int(input("Введите значение с:"))
 
 x = a+b*4-c
 
-print("x = ", x)
+print("Полученное x = ", x)
 
 input()
